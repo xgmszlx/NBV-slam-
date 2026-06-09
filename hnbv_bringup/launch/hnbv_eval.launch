@@ -1,0 +1,9 @@
+<launch>
+  <arg name="env" default="env1" />
+  <arg name="mode" default="full_hierarchical" />
+  <include file="$(find hnbv_bringup)/launch/hnbv_system.launch">
+    <arg name="env" value="$(arg env)" />
+    <arg name="mode" value="$(arg mode)" />
+  </include>
+</launch>
+

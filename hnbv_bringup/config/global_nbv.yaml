@@ -1,0 +1,18 @@
+global_nbv:
+  dbscan_eps_m: 0.5
+  dbscan_min_samples: 5
+  yaw_degrees: [0, 45, 90, 135, 180, 225, 270, 315]
+  camera_fov_deg: 90.0
+  max_range_m: 5.0
+  lambda_d: 0.8
+  lambda_theta: 1.0
+  epsilon: 1.0e-6
+  stop_gain_bits_env1: 50.0
+  stop_gain_bits_env2: 260.0
+  completion:
+    enabled: true
+    neighborhood_radius_m: 1.0
+    candidate_spacing_m: 0.5
+    arrival_radius_m: 0.3
+    min_local_gain_bits: 5.0
+

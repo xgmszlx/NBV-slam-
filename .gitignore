@@ -1,0 +1,39 @@
+# Build outputs
+build/
+devel/
+install/
+logs/
+.catkin_tools/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# ROS/Gazebo runtime artifacts
+*.bag
+*.db3
+*.active
+*.bt
+*.pcd
+*.pgm
+*.yaml~
+gazebo_models/
+
+# Experiment outputs
+runs/
+hnbv_runs/
+figures/
+*.zip
+
+# Editors/OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+

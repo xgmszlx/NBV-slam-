@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="env2_complex_19x22">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <model name="env2_internal_walls">
+      <static>true</static>
+      <link name="walls">
+        <collision name="wall_a">
+          <pose>0 0 0.5 0 0 0</pose>
+          <geometry><box><size>8 0.15 1</size></box></geometry>
+        </collision>
+        <visual name="wall_a">
+          <pose>0 0 0.5 0 0 0</pose>
+          <geometry><box><size>8 0.15 1</size></box></geometry>
+        </visual>
+        <collision name="wall_b">
+          <pose>3 4 0.5 0 0 1.5708</pose>
+          <geometry><box><size>6 0.15 1</size></box></geometry>
+        </collision>
+        <visual name="wall_b">
+          <pose>3 4 0.5 0 0 1.5708</pose>
+          <geometry><box><size>6 0.15 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
+

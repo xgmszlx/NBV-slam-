@@ -1,0 +1,13 @@
+style:
+  dpi: 200
+  figure_width_in: 8
+  figure_height_in: 5
+  font_size: 10
+  output_formats: [png, pdf]
+colors:
+  global_only: "#377eb8"
+  full_hierarchical: "#4daf4a"
+  nearest_frontier: "#984ea3"
+  tare: "#ff7f00"
+  rne: "#e41a1c"
+

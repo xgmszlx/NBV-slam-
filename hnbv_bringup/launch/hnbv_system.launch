@@ -1,0 +1,24 @@
+<launch>
+  <arg name="env" default="env1" />
+  <arg name="mode" default="full_hierarchical" />
+
+  <rosparam file="$(find hnbv_bringup)/config/global_nbv.yaml" command="load" />
+  <rosparam file="$(find hnbv_bringup)/config/local_nbv.yaml" command="load" />
+  <rosparam file="$(find hnbv_bringup)/config/camera_realsense_d435.yaml" command="load" />
+  <rosparam file="$(find hnbv_bringup)/config/yolov8_botsort.yaml" command="load" />
+
+  <param name="/hnbv/env" value="$(arg env)" />
+  <param name="/hnbv/mode" value="$(arg mode)" />
+
+  <node pkg="hnbv_bringup" type="exploration_manager.py" name="exploration_manager" output="screen" />
+  <node pkg="hnbv_semantics" type="semantic_tracker_node.py" name="semantic_tracker_node" output="screen" />
+  <node pkg="hnbv_slam" type="slam_state_publisher" name="slam_state_publisher" output="screen" />
+  <node pkg="hnbv_mapping" type="masked_pointcloud_node" name="masked_pointcloud_node" output="screen" />
+  <node pkg="hnbv_mapping" type="occupancy_projection_node" name="occupancy_projection_node" output="screen" />
+  <node pkg="hnbv_planner" type="global_nbv_node" name="global_nbv_node" output="screen" />
+
+  <group if="$(eval mode == 'full_hierarchical')">
+    <node pkg="hnbv_planner" type="local_nbv_node" name="local_nbv_node" output="screen" />
+  </group>
+</launch>
+

@@ -1,0 +1,10 @@
+camera:
+  width: 640
+  height: 480
+  fx: 573.4
+  fy: 574.8
+  cx: 320.1
+  cy: 322.6
+  max_depth_m: 5.0
+  frame_id: camera_color_optical_frame
+

@@ -1,0 +1,12 @@
+int32 id
+string class_name
+int32 class_id
+float32 confidence
+sensor_msgs/RegionOfInterest bbox
+geometry_msgs/Point32 centroid_px
+geometry_msgs/Vector3 velocity_px
+float32 speed_px_per_frame
+float32 motion_angle_rad
+bool geometry_dynamic
+uint32 violation_count
+

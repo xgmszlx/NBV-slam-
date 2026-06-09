@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find hnbv_bringup)/launch/sim_env2.launch" />
+</launch>
+

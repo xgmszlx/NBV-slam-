@@ -1,0 +1,11 @@
+near_collision_distance_m: 2.0
+near_collision_min_duration_s: 3.0
+coverage_targets: [0.7, 0.8, 0.9, 0.95]
+entropy_log_base: 2
+required_metrics_top_level:
+  - efficiency
+  - mapping
+  - slam
+  - dynamic
+  - runtime
+

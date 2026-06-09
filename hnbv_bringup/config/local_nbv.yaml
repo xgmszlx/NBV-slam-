@@ -1,0 +1,19 @@
+local_nbv:
+  rate_hz: 10.0
+  fpm_width: 640
+  fpm_height: 480
+  fpm_debug_width: 160
+  fpm_debug_height: 120
+  gaussian_blur_kernel: 7
+  alpha: 1.5
+  beta: 0.5
+  epsilon: 0.01
+  feature_weight: 1.0
+  dynamic_weight: 1.0
+  max_linear_velocity: 0.2
+  max_angular_velocity: 0.2
+  horizon_s: 1.0
+  dt_s: 0.1
+  linear_samples: 5
+  angular_samples: 9
+

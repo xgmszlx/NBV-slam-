@@ -1,0 +1,10 @@
+success:
+  max_time_s_env1: 600
+  max_time_s_env2: 1200
+  max_tracking_loss_rate: 0.2
+dynamic:
+  near_collision_distance_m: 2.0
+  near_collision_min_duration_s: 3.0
+coverage:
+  targets: [0.7, 0.8, 0.9, 0.95]
+

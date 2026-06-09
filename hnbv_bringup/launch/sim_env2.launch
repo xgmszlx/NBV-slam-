@@ -1,0 +1,10 @@
+<launch>
+  <arg name="paused" default="false" />
+  <arg name="gui" default="true" />
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find hnbv_sim)/worlds/env2_complex_19x22.world" />
+    <arg name="paused" value="$(arg paused)" />
+    <arg name="gui" value="$(arg gui)" />
+  </include>
+</launch>
+

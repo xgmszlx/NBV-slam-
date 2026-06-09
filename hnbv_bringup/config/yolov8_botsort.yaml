@@ -1,0 +1,12 @@
+semantic_tracker:
+  weights: yolov8s-seg.pt
+  confidence: 0.8
+  nms_iou: 0.45
+  dynamic_class: person
+  botsort_iou: 0.8
+  max_age_frames: 30
+  epipolar:
+    sampson_threshold_px: 2.0
+    required_consecutive_frames: 3
+    min_matches_per_object: 8
+

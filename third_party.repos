@@ -1,0 +1,14 @@
+repositories:
+  ORB_SLAM2:
+    type: git
+    url: https://github.com/raulmur/ORB_SLAM2.git
+    version: master
+  tare_planner:
+    type: git
+    url: https://github.com/caochao39/tare_planner.git
+    version: master
+  rnexploration:
+    type: git
+    url: https://github.com/MarcoStb1993/rnexploration.git
+    version: master
+
